@@ -1,0 +1,55 @@
+-create ec2
+	-name
+	aws linux
+	-t2xlarge
+	-keypair
+	-allow both
+	-security(4000-38888)
+
+-connect with local terminal
+-1 bash
+	-connect to EC2
+	-Copy files to EC2
+	-Copy files to EC2
+	-Commands to install Docker
+	-Start Docker
+-2 bash
+	-connect with port forwarding
+	
+-open jupyter local host
+	-run faker file
+	
+-3 bash
+	-connect to EC2
+	-Test data preparation
+	-here is it
+	
+-open nifi
+	-group processor
+		-processor(searcch)
+			-list file
+				-sucess
+				-directry
+			-fetchfile
+				-failure,not,folund,all
+			-puts3
+				-bucket name
+				-region
+				-access key
+-open aws
+	-iam
+		-s3policy
+	-role
+		-role
+
+-open snowflake
+	-1 table creation
+	-2 dataingestion
+	-3 scd type 1
+	-4 scd type 2
+	
+	
+
+
+
+	
