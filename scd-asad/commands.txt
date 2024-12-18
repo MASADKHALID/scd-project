@@ -6,13 +6,13 @@
 - Connect to ec2 via ssh
 
 # connect to EC2
-ssh -i "key-pair.pem" ec2-user@ec2-52-91-52-213.compute-1.amazonaws.com
+ec2 ssh
 
 # connect with port forwarding
-ssh -i "key-pair.pem" ec2-user@ec2-52-91-52-213.compute-1.amazonaws.com -L 2081:localhost:2041 -L 4888:localhost:4888 -L 2080:localhost:2080 -L 8050:localhost:8050 -L 4141:localhost:4141
+ssh -i <after i to .com> -L 2081:localhost:2041 -L 4888:localhost:4888 -L 2080:localhost:2080 -L 8050:localhost:8050 -L 4141:localhost:4141
 
 # Copy files to EC2
-scp -r -i "key-pair.pem" ec2-user@ec2-52-91-52-213.compute-1.amazonaws.com:/home/ec2-user/docker_exp
+scp -r -i <after i to .com>:/home/ec2-user/docker_exp
 
 # Copy files to EC2
 scp -r -i "key-pair.pem" docker_exp ec2-user@ec2-52-91-52-213.compute-1.amazonaws.com:/home/ec2-user/docker_exp
